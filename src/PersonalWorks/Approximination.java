@@ -1,6 +1,6 @@
 package PersonalWorks;
 
-import java.awt.Color;
+
 
 public class Approximination {
 	public static double function(double xo, double[] x, double[] y) {

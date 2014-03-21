@@ -3,7 +3,7 @@ package PersonalWorks;
 import java.applet.Applet;
 import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.HeadlessException;
+
 import java.awt.Image;
 
 @SuppressWarnings("serial")
@@ -41,7 +41,6 @@ public class MaybeFractal extends Applet{
 	   if(Math.abs(x)<=1){
 		   return x * x;
 	   }else{
-		   double g = x / round(x);
 		   return Math.pow(f(x / round(x)), round(x));
 	   }
 	   

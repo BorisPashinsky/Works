@@ -2,8 +2,7 @@ package PersonalWorks;
 
 import java.applet.*;
 import java.awt.*;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
+
  
 @SuppressWarnings("serial")
 public class GraficRedactor extends Applet{
@@ -40,7 +39,7 @@ public class GraficRedactor extends Applet{
 	   if(Math.abs(x)<=1){
 		   return x * x;
 	   }else{
-		   double g = x / round(x);
+
 		   return Math.pow(f(x / round(x)), round(x));
 	   }
 	   

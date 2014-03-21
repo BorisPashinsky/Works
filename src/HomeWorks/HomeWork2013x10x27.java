@@ -8,6 +8,10 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 
 public class HomeWork2013x10x27 extends Applet {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	JButton q1;
 	JButton q2;
 	JLabel a;

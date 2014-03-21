@@ -8,6 +8,10 @@ import javax.swing.JLabel;
 
 public class Redactor extends Applet {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	int width, height;
 	Image backbuffer;
 	Graphics backg;
@@ -56,15 +60,17 @@ public class Redactor extends Applet {
 				y[i] = yo;
 				i = i + 1;
 				repaint();
+				System.out.println("работает");
 			}
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				//				System.out.println("работает");
+					System.out.println("работает");
 			}
 		};
 		this.addMouseListener(al);
 		this.addKeyListener(new KeyAdapter() {
 			public void keyPressed(KeyEvent e) {
+				System.out.println("работает1");
 				double[] x1 = new double[i];
 				double[] y1 = new double[i];
 				for(int j = 0; j < i; j++){
@@ -79,6 +85,7 @@ public class Redactor extends Applet {
 					backg.drawLine(k,j,k + 1,g);
 				}
 				repaint();
+				System.out.println("работает2");
 			}
 		});
 
